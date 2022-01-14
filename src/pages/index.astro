@@ -9,8 +9,8 @@ interface MarkdownFrontmatter {
   date: number;
 }
 
-let title = 'Creek';
-let description = 'A Theme for Astro';
+let title = `Gabi's thoughts`;
+let description = 'My memos mainly about work and geeky hobbies';
 let seoDescription = 'Creek is a theme for Astro static site generator';
 
 let allPosts = Astro.fetchContent<MarkdownFrontmatter>('./posts/*.md');
