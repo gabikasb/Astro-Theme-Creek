@@ -1,0 +1,64 @@
+---
+import BaseHead from '../components/Head/BaseHead.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer/Footer.astro'
+
+let title = 'Gaborgyure - about me';
+let description = '';
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+
+  <body class="bg-white text-black font-body leading-normal personality-casual">
+    <Nav />
+
+    <main class="py-12 lg:py-20">
+      <article class="max-w-6xl mx-auto px-3">
+        <header class="mx-auto max-w-3xl text-center content">
+                <h1>Hi, I am Gabor</h1>
+        </header>
+          <div class="content">
+                <p>
+                    I&#x27;m a mechanical engineer with deep interest in process and information flow development in an open way.
+                    I also have a thing for digital prototyping and validation.
+                </p>
+                <h2>Some organizations I am / was working for:</h2>
+                <ul>
+                    <li><a href="https://www.miskolcigeneracio.hu" >MAG KTE</a><br  /><small >2017</small></li>
+                    <li><a href="https://cryonorm.com" >Cryonorm BV</a><br  /><small >2017</small></li>
+                    <li ><a href="https://www.bosch.hu/vallalatunk/a-bosch-magyarorszagon/miskolc-robert-bosch-power-tool-kft/" >Robert Bosch Power Tool Ltd. </a><br  /><small >2014 - McP/TEF1</small></li>
+                    <li ><a href="https://www.bosch.hu/vallalatunk/a-bosch-magyarorszagon/miskolc-robert-bosch-energy-and-body-systems-kft/" >Robert Bosch Energy and Body Systems Ltd.</a><br  /><small >2011 - RBHM/MOE3, as of today:</small></li>
+                    <li ><a href="http://www.seg-automotive.hu/" >SEGA Hungary</a><br  /><small ></small></li>
+                    <li><a href="https://www.aiesec.hu/" >AIESEC in Hungary</a><br  /><small >2010</small></li>
+                </ul>
+                <h2 id="findme" >You can find me on:</h2>
+                <ul >
+                    <li ><a href="https://github.com/gabikasb" >github</a></li>
+                    <li ><a href="https://www.linkedin.com/in/gyuregabor/" >linkedin</a></li>
+                    <li ><a href="https://www.f6s.com/gborgyre" >F6S platform</a></li>
+                    <li ><a href="https://medium.com/@gyuregabi" >medium</a></li>
+                    <li ><a href="https://grabcad.com/gyure.gabor-1/" >grabcad</a></li>
+                    <li ><a href="https://www.facebook.com/gyuregabi" >facebook</a></li>
+                    <li ><a href="https://instagram.com/gyfk" >instagram</a></li>
+                    <li ><a href="https://twitter.com/gabikasb" >twitter</a></li>
+                    <li ><a href="https://sbphd.tumblr.com/" >tumblr</a></li>
+                    <li><a href="/blog">+1, my brand new super-work-in-progress blog :)</a></li>
+                </ul>
+                <aside class="text-center py-16 max-w-3xl mx-auto">
+                    <div class="w-full border-t-2 mb-8 border-black squiggle"></div>
+                    <h2 id="contact">Contact me:</h2>
+                        <p >
+                            You want to work with me or just say hi? Shoot me an <a href="mailto:hello@gaborgyure.com" >email</a>.
+                        </p>
+                                          
+                    <div class="w-full border-b-2 pt-12 border-black squiggle"></div>
+                </aside>
+        </div>
+      </article>
+    </main>
+    <Footer />
+  </body>
+</html>
